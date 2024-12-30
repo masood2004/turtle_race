@@ -33,11 +33,11 @@ if user_choice:
                 is_race_on = False
                 winning_colour = turtle.pencolor()
                 if winning_colour == user_choice:
-                    messagebox.showinfo("Winner!", f"You've won! The {
+                    messagebox.showinfo("Winner!", f"You've won! 😁 The {
                                         winning_colour} turtle is the winner")
 
                 else:
-                    messagebox.showinfo("Lost!", f"You've won! The {
+                    messagebox.showinfo("Lost!", f"You've lost! 😔 The {
                                         winning_colour} turtle is the winner")
 
             random_distance = random.randint(0, 10)
