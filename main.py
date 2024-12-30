@@ -2,6 +2,7 @@ from turtle import Turtle, Screen
 import random
 import tkinter as tk
 from tkinter import messagebox
+import sys
 
 root = tk.Tk()
 root.withdraw()  # Hide the main Tkinter window
@@ -35,10 +36,12 @@ if user_choice:
                 if winning_colour == user_choice:
                     messagebox.showinfo("Winner!", f"You've won! 😁 The {
                                         winning_colour} turtle is the winner")
+                    sys.exit()
 
                 else:
                     messagebox.showinfo("Lost!", f"You've lost! 😔 The {
                                         winning_colour} turtle is the winner")
+                    sys.exit()
 
             random_distance = random.randint(0, 10)
             turtle.forward(random_distance)
